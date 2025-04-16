@@ -1,0 +1,18 @@
+1. pwd - print working directory
+2. ls - list
+3. cd - change directory
+4. clear - clear
+5. touch - create file
+6. nano - open file for editing
+7. mkdir - make directory
+8. cp a b - copy and paste
+9. mv a b - move file
+10. rm - remove files
+11. rm -rf - remove directory
+12. sudo - supre user
+13. sudo su - switch user
+14. find -type f/d -name "*" - find files
+15. cat - displays file contents
+16. grep - find word from file
+17. sort a > b - sort file
+18. vim - base simple redactor

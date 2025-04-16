@@ -1,0 +1,91 @@
+1. pwd - print working directory
+2. ls || l - list
+3. cd - change directory
+4. clear
+5. touch - create file
+6. nano - open file for editing
+7. mkdir - make directory
+8. cp - copy paste <cp copy_file path_paste>
+9. mv - move <mv from to>
+10. rm - remove files
+11. rm -rf - remove directories
+12. sudo - supre user
+13. sudo su - sudo switch user
+
+mods group
+1   2    3 
+1 - supre user
+2 - group
+3 - user
+
+14. sudo chwon root:tunagatarov text.txt - change file root
+15. sudo chmod -R 664 <file> - change modification
+Флаг -R действия ко всем подкаталогам и файлам внутри указанного каталога.
+4 - read
+6 - read + write
+7 - full access
+
+16. find - find files
+find <from> -type f -iname "<file_name>"
+d - directory 
+f - files
+name - name
+iname - cpp = CPP
+find . - type f -name "*.txt"
+
+17. cat - displays file contents
+18. grep - find word from file
+grep "b" users.txt user2.txt
+grep -n -i "b" users.txt user2.txt
+
+i - G = g
+n - number where found the word
+
+19. -exec - merge commands
+find . -type f -name "*.txt" -exec grep -n -i "te*" {} +
+
+20. sort - sort file
+sort file.txt
+-n - sort by numbers 97 98 99
+-r - sort reverse 99 98 97
+
+21. sort file.txt > sorted.txt
+sort and save
+
+22. tree
+- file1
+- file2
+- file3
+--- file 231
+- file4
+
+23. vim - base simple redactor
+Чтобы сохранить изменения, введите команду :w и нажмите Enter.
+Чтобы выйти, введите :q и нажмите Enter.
+Чтобы сохранить и выйти, введите :wq или ZZ (в нормальном режиме).
+Если вы хотите выйти без сохранения, используйте :q!.
+Чтобы вставить текст, нажмите i для перехода в режим вставки, напишите текст, а затем нажмите Esc, чтобы вернуться в нормальный режим.
+Чтобы отменить последнее действие, используйте u.
+
+
+
+ls	показать список файлов в директории
+cd	перейти в директорию (cd .. – вверх)
+pwd	показать текущую директорию
+mkdir name	создать директорию
+rm file	удалить файл (rm -r folder – удалить папку)
+cp a b	скопировать файл a в b
+mv a b	переименовать или переместить
+touch file	создать пустой файл
+cat file	вывести содержимое файла
+man command	документация по команде
+chmod +x file.sh	сделать файл исполняемым
+top / htop	мониторинг процессов
+
+
+
+grep — Поиск по тексту
+grep "root" /etc/passwd
+awk — Работа с текстом построчно и по колонкам
+awk '{print $1}' file.txt
+vim — Текстовый редактор в терминале
